@@ -1,0 +1,9 @@
+consigna parametro : nodemon app.js -m fork o nodemon app.js -m cluster
+
+consigna forever: forever start app.js -p 8080 -m cluster
+
+consigna pm2:  pm2 start app.js --watch y pm2 start app.js -i max --watch 
+
+consigna ngnix: pm2 start app.js -p 8080 y despues nodemon app.js -m cluster -p 8081
+
+
